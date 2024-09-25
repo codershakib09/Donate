@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="grid m-auto">
+    <header class="w-full sticky top-0 backdrop-blur z-10 m-auto">
+      <div class="md:bg-[#e9de7654]">
+        <nav
+          class="w-11/12 m-auto space-y-6 md:flex md:items-center md:justify-between md:pb-6 lg:px-[4%]"
+        >
+          <div class="flex items-center justify-center">
+            <button
+              id="home"
+              class="home btn bg-lime-400 px-10 mt-6 border-none font-bold text-lg"
+            >
+              Home
+            </button>
+          </div>
+
+          <div
+            class="flex-1 flex items-center justify-center space-x-2 text-center"
+          >
+            <img class="md:w-8 lg:w-10" src="./images/logo.png" alt="logo" />
+            <span class="text-black font-bold text-xl md:text-xl"
+              >Donate Bangladesh</span
+            >
+          </div>
+
+          <div class="flex items-center justify-center space-x-2 text-center">
+            <img class="w-8" src="./images/coin.png" alt="" />
+            <span id="second-blance" class="font-bold text-black text-xl"
+              >5500</span
+            >
+            <span class="font-bold text-black text-xl">BDT</span>
+          </div>
+        </nav>
+      </div>
+
+      <!-- ================donation history  -->
+      <div class="mt-12 space-y-6 w-11/12 m-auto lg:px-[4%]">
+        <h1 class="text-4xl font-bold">Important FAQ</h1>
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 bg-base-200 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model(DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The DOM (Document Object Model) is a programming interface for web
+              documents. It represents the structure of a document as a tree of
+              objects.This tree-like structure allows each part of the document
+              to be accessed and manipulated programmatically.
+            </p>
+          </div>
+        </div>
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 bg-base-200 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              I have many ways to select an element from the DOM:
+              document.getElementsByTagName() is used to select elements by
+              their tag name. document.getElementById() is used to select an
+              element by its unique id attribute. document.querySelector()
+              allows to select the first element that matches a CSS selector.
+              document.querySelectorAll() selects all elements that match a CSS
+              selector and returns a NodeList. There are more ways to select
+              elements in the DOM.
+            </p>
+          </div>
+        </div>
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 bg-base-200 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context og the DOM, and whuy it is
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event delegation is a technique where a single event listener is
+              added to a parent element instead of individual child elements.
+              The event then "bubbles up" to the parent, leveraging DOM event
+              propagation for efficient handling.
+            </p>
+          </div>
+        </div>
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 bg-base-200 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulatale an elements attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              i can manipulate an element's attributes using getAttribute(),
+              setAttribute(), and removeAttribute(). For styles, i can change
+              CSS directly with element.style. such as
+              element.style.backgroundColor = 'red' .And also i can use
+              classList.add or remove.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ================donation history  -->
+    </header>
+
+    <script src="JS/utilise.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
